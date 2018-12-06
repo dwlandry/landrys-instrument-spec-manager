@@ -40,7 +40,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Instrument_ListView" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Bottom" AllowEdit="True">
+    <ListView Id="Instrument_ListView" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Bottom" AllowEdit="False">
       <Columns>
         <ColumnInfo Id="ServiceDescription" Index="-1" />
         <ColumnInfo Id="Project" Index="0" />
