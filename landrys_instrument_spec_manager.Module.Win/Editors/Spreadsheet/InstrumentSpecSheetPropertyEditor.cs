@@ -1,16 +1,22 @@
-﻿using DevExpress.ExpressApp.Editors;
+﻿//-----------------------------------------------------------------------
+// <copyright file="E:\OneDrive\My Programming Projects\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module.Win\Editors\Spreadsheet\InstrumentSpecSheetPropertyEditor.cs" company="David W. Landry III">
+//     Author: _**David Landry**_
+//     *Copyright (c) David W. Landry III. All rights reserved.*
+// </copyright>
+//-----------------------------------------------------------------------
+
+using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Win.Editors;
 using System;
 using System.IO;
 using System.Text;
-using System.Windows.Forms;
 
 namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
 {
     // For an example on how to implement a property editor in winforms, refer to https://docs.devexpress.com/eXpressAppFramework/112679/task-based-help/property-editors/how-to-implement-a-property-editor-based-on-a-custom-control-winforms
 
-    [PropertyEditor(typeof(String), "XLS",false)]
+    [PropertyEditor(typeof(String), "XLS", false)]
     public class InstrumentSpecSheetPropertyEditor : WinPropertyEditor, IInplaceEditSupport
     {
         private SpreadsheetContainer ctrl = null;
@@ -33,7 +39,7 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
             return ctrl;
         }
 
-        
+
 
         protected override void ReadValueCore()  //Load From Text PropertyValue
         {
@@ -49,7 +55,6 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
 
                         ms.Position = 0;
                         ctrl.SheetControl.LoadDocument(ms, DevExpress.Spreadsheet.DocumentFormat.OpenXml);
-                        //ctrl.Enabled = true;
                     }
                 }
                 catch (Exception)
@@ -58,17 +63,14 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
                     if (File.Exists(filePath))
                     {
                         ctrl.SheetControl.LoadDocument(filePath);
-                       //ctrl.Enabled = true;
                     }
                     else if (File.Exists(filePath.Replace("E:\\ReCon\\", "D:\\")))
                     {
                         ctrl.SheetControl.LoadDocument(filePath.Replace("E:\\ReCon\\", "D:\\"));
-                        //ctrl.Enabled = true;
                     }
                     else if (File.Exists(filePath.Replace("E:\\ReCon\\", "F:\\")))
                     {
                         ctrl.SheetControl.LoadDocument(filePath.Replace("E:\\ReCon\\", "F:\\"));
-                        //ctrl.Enabled = true;
                     }
                     else if (File.Exists(filePath.Replace("E:\\ReCon\\", "W:\\dlandry\\Public\\landrys-instrument-spec-manager\\")))
                     {
@@ -82,11 +84,9 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
                         ctrl.SheetControl.Document.Worksheets[0].Cells[2, 0].Value = filePath.Replace("E:\\ReCon\\", "D:\\");
                         ctrl.SheetControl.Document.Worksheets[0].Cells[3, 0].Value = filePath.Replace("E:\\ReCon\\", "F:\\");
                         ctrl.SheetControl.Document.Worksheets[0].Cells[4, 0].Value = filePath.Replace("E:\\ReCon\\", "W:\\dlandry\\Public\\landrys-instrument-spec-manager\\");
-                        //ctrl.Enabled = false;
                     }
                     //throw;
                 }
-                //ctrl.SheetControl.ReadOnly = true;
 
 
 
@@ -95,7 +95,7 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
             {
                 // load a new workbook
                 ctrl.SheetControl.CreateNewDocument();
-                ctrl.SheetControl.ReadOnly = false;
+                //ctrl.SheetControl.ReadOnly = false;
                 //MessageBox.Show("PropertyValue is null.");
             }
         }
