@@ -24,7 +24,7 @@
                 <LayoutItem Id="ServiceDescription" ViewItem="ServiceDescription" Index="1" RelativeSize="50" IsNewNode="True" Removed="True" />
               </LayoutGroup>
               <LayoutGroup Id="Instrument_col2" RelativeSize="59.090909090909093" Caption="Instrument_col2">
-                <LayoutItem Id="Project" ViewItem="Project" Index="0" RelativeSize="50" IsNewNode="True" />
+                <LayoutItem Id="Project" Index="0" RelativeSize="50" ViewItem="Project" IsNewNode="True" />
                 <LayoutGroup Id="Autobeeed420-7133-4bb9-b713-f35981180530" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
                   <LayoutItem Id="Manufacturer" ViewItem="Manufacturer" Index="0" RelativeSize="49.230769230769234" IsNewNode="True" />
                   <LayoutItem Id="ModelNumber" ViewItem="ModelNumber" Index="1" RelativeSize="50.769230769230766" IsNewNode="True" />
@@ -32,11 +32,29 @@
                 <LayoutItem Id="Manufacturer" RelativeSize="50" Removed="True" />
                 <LayoutItem Id="ModelNumber" RelativeSize="50" Removed="True" />
               </LayoutGroup>
-              <LayoutItem Id="Project" RelativeSize="30" SizeConstraintsType="Default" MinSize="165, 40" Removed="True" />
-              <LayoutItem Id="Tag" Removed="True" />
             </LayoutGroup>
           </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" TextAlignMode="AlignWithChildren" RelativeSize="78.78151260504201" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SpecSheetTemplate_DetailView">
+      <Items>
+        <PropertyEditor Id="SpecSheet" PropertyEditorType="landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet.InstrumentSpecSheetPropertyEditor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="22.357723577235774">
+            <LayoutGroup Id="SpecSheetTemplate" RelativeSize="100">
+              <LayoutItem Id="Category" RelativeSize="29.09090909090909" />
+              <LayoutItem Id="Title" RelativeSize="21.818181818181817" />
+              <LayoutItem Id="FormNumber" RelativeSize="21.818181818181817" />
+              <LayoutItem Id="Source" RelativeSize="27.272727272727273" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" TextAlignMode="AlignWithChildren" RelativeSize="77.642276422764226">
+            <LayoutItem Id="SpecSheet" ShowCaption="False" RelativeSize="100" />
+          </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>

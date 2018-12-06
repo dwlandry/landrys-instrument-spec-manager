@@ -134,6 +134,8 @@
     <Compile Include="BusinessObjects\Instrument.cs" />
     <Compile Include="BusinessObjects\InstrumentType.cs" />
     <Compile Include="BusinessObjects\Project.cs" />
+    <Compile Include="BusinessObjects\SpecSheetTemplate.cs" />
+    <Compile Include="BusinessObjects\SpecSheetTemplateCategory.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
