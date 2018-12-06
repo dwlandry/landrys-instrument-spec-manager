@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="-2 -4 32 32"
+   version="1.1"
+   id="svg3825"
+   sodipodi:docname="Icon.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="E:\OneDrive\My Programming Projects\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module\Images\Icon_48x48.png"
+   inkscape:export-xdpi="144"
+   inkscape:export-ydpi="144">
+  <metadata
+     id="metadata3831">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3829" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3827"
+     showgrid="false"
+     inkscape:zoom="13.25"
+     inkscape:cx="-7.6203138"
+     inkscape:cy="15.593313"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3825" />
+  <g
+     id="Layer_1"
+     transform="matrix(0.91509434,0,0,1,5.6981107,-7.320755)">
+    <g
+       id="List">
+      <rect
+         x="12"
+         y="14"
+         width="8"
+         height="2"
+         rx="0"
+         ry="0"
+         class="Black"
+         id="rect3773"
+         style="fill:#727272" />
+    </g>
+  </g>
+  <g
+     id="g3781"
+     transform="matrix(1.3301887,0,0,1,-2.2368247,-7.6981132)">
+    <g
+       id="g3779">
+      <rect
+         x="11.724137"
+         y="10.377358"
+         width="8"
+         height="2"
+         rx="0"
+         ry="0"
+         class="Black"
+         id="rect3777"
+         style="fill:#727272" />
+    </g>
+  </g>
+  <g
+     id="g3787"
+     transform="matrix(0.61320755,0,0,1,11.88679,-7.320755)">
+    <g
+       id="g3785">
+      <rect
+         x="12"
+         y="18"
+         width="8"
+         height="2"
+         rx="0"
+         ry="0"
+         class="Black"
+         id="rect3783"
+         style="fill:#727272" />
+    </g>
+  </g>
+  <g
+     id="g3793"
+     transform="translate(2.5283019,-5.9622641)"
+     style="fill:#727272;fill-opacity:1">
+    <g
+       id="g3791"
+       style="fill:#727272;fill-opacity:1">
+      <path
+         d="M 25,4 H 7 C 6.5,4 6,4.5 6,5 v 22 c 0,0.5 0.5,1 1,1 h 18 c 0.5,0 1,-0.5 1,-1 V 5 C 26,4.5 25.5,4 25,4 Z M 24,26 H 8 V 6 h 16 z"
+         class="Blue"
+         id="path3789"
+         style="fill:#727272;fill-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <rect
+     x="19.245281"
+     y="14.679245"
+     width="4.9056602"
+     height="2"
+     rx="0"
+     ry="0"
+     class="Black"
+     id="rect3777-0"
+     style="fill:#727272;stroke-width:0.78307569" />
+  <g
+     id="g3847-3"
+     style="fill:#ffffff;fill-opacity:1;stroke:#0f181f;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     transform="matrix(1.5242757,0,0,1.4654383,-0.36437828,-11.926278)">
+    <g
+       id="g3843-0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#0f181f;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke">
+      <ellipse
+         id="path3840-4"
+         cx="6.8490562"
+         cy="19.056604"
+         rx="7"
+         ry="7.2830191"
+         style="fill:#ffffff;fill-opacity:1;stroke:#0f181f;stroke-width:1.60000002;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+  </g>
+  <g
+     id="Layer_1-4"
+     transform="matrix(1.4245283,0,0,1,-12.679245,-2.8490566)">
+    <g
+       id="List-0">
+      <rect
+         x="12"
+         y="14"
+         width="8"
+         height="2"
+         rx="0"
+         ry="0"
+         class="Black"
+         id="rect3773-2"
+         style="fill:#727272" />
+    </g>
+  </g>
+  <g
+     id="Layer_1-4-6"
+     transform="matrix(1.4245283,0,0,1,-12.641509,3.8679246)">
+    <g
+       id="List-0-1">
+      <rect
+         x="12"
+         y="14"
+         width="8"
+         height="2"
+         rx="0"
+         ry="0"
+         class="Black"
+         id="rect3773-2-7"
+         style="fill:#727272" />
+    </g>
+  </g>
+</svg>

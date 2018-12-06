@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo">
+  <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" />
+  <Options UIType="TabbedMDI" FormStyle="Standard" ShowTabImage="False" Skin="DevExpress Style">
+    <LayoutManagerOptions EnableLayoutGroupImages="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="ImportWizardModule" Version="18.2.300.0" IsNewNode="True" />
+    <SchemaModule Name="ImportWizardWindowsFormsModule" Version="18.2.300.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Instrument_DetailView">
+      <Items>
+        <PropertyEditor Id="SpecSheet" PropertyEditorType="landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet.InstrumentSpecSheetPropertyEditor" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

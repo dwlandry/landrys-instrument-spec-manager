@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Landrys Inst Spec Mgr" Company="David Landry" Copyright="David Landry" Description="Landrys Instrument Spec Manager">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Client_ListView" Removed="True" />
+          <Item Id="Instrument_ListView" Removed="True" />
+          <Item Id="InstrumentType_ListView" Removed="True" />
+          <Item Id="Project_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Spec Sheets" Caption="Spec Sheets" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Instrument_ListView" ViewId="Instrument_ListView" ObjectKey="" Index="0" Caption="Instrument" ImageName="BO_List" IsNewNode="True" />
+          <Item Id="Project_ListView" ViewId="Project_ListView" ObjectKey="" Index="1" ImageName="BO_Project" IsNewNode="True" />
+          <Item Id="InstrumentType_ListView" ViewId="InstrumentType_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+          <Item Id="Client_ListView" ViewId="Client_ListView" ObjectKey="" Index="3" ImageName="Customers" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="ImportWizardModule" Version="18.2.300.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Instrument_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="11.946050096339114">
+            <LayoutGroup Id="Instrument" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="88.0539499036609">
+            <LayoutItem Id="SpecSheet" ShowCaption="False" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Instrument_ListView" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Bottom" AllowEdit="True">
+      <Columns>
+        <ColumnInfo Id="ServiceDescription" Index="-1" />
+        <ColumnInfo Id="Project" Index="0" />
+        <ColumnInfo Id="Tag" Index="1" />
+        <ColumnInfo Id="InstrumentType" Index="2" />
+        <ColumnInfo Id="Manufacturer" Index="3" />
+        <ColumnInfo Id="ModelNumber" Index="4" />
+      </Columns>
+    </ListView>
+    <ListView Id="Project_Instruments_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
+  </Views>
+</Application>
