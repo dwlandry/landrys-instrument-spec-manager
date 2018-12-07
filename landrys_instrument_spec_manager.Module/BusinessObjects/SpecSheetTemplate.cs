@@ -14,6 +14,7 @@ using System.Linq;
 namespace landrys_instrument_spec_manager.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [NavigationItem("Templates")]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
