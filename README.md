@@ -1,7 +1,7 @@
 # landrys-instrument-spec-manager
 A tool to manage all of you instrumentation spec sheets.
 
-_**Need to define my market:**_
+_**Need to define my market:**_\
 How many Oil and Gas companies in the US?\
 How many Petrochemical companies in the US?\
 How many instrumentation companies in the US?\
