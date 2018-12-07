@@ -29,12 +29,27 @@
   </SchemaModules>
   <Views>
     <DetailView Id="Instrument_DetailView">
+      <Items>
+        <PropertyEditor Id="InstrumentType" Caption="Type" />
+        <PropertyEditor Id="ServiceDescription" Caption="Service" />
+      </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="11.946050096339114">
-            <LayoutGroup Id="Instrument" RelativeSize="100" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="24.03846153846154">
+            <LayoutGroup Id="Instrument" RelativeSize="100">
+              <LayoutGroup Id="Instrument_col1" RelativeSize="49.927641099855279" Caption="Instrument_col1">
+                <LayoutItem Id="Tag" ViewItem="Tag" CaptionLocation="Left" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="InstrumentType" ViewItem="InstrumentType" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="ServiceDescription" RelativeSize="36.363636363636367" Index="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Instrument_col2" RelativeSize="50.072358900144721">
+                <LayoutItem Id="Manufacturer" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="ModelNumber" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Project" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" RelativeSize="88.0539499036609">
+          <LayoutGroup Id="SizeableEditors" RelativeSize="75.961538461538467">
             <LayoutItem Id="SpecSheet" ShowCaption="False" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>

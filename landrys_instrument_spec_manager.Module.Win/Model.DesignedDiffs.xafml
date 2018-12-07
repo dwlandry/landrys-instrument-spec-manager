@@ -11,32 +11,6 @@
       <Items>
         <PropertyEditor Id="SpecSheet" AllowEdit="True" />
       </Items>
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="21.218487394957982">
-            <LayoutGroup Id="Instrument">
-              <LayoutGroup Id="Instrument_col1" Caption="Instrument_col1" RelativeSize="40.909090909090907">
-                <LayoutGroup Id="Auto93a788be-43d1-449f-bf15-77216624873a" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="Tag" ShowCaption="False" TextAlignMode="CustomSize" ViewItem="Tag" Index="0" RelativeSize="28.888888888888889" IsNewNode="True" />
-                  <LayoutItem Id="InstrumentType" ViewItem="InstrumentType" Index="1" RelativeSize="71.111111111111114" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutItem Id="InstrumentType" Index="1" RelativeSize="50" Removed="True" />
-                <LayoutItem Id="ServiceDescription" ViewItem="ServiceDescription" Index="1" RelativeSize="50" IsNewNode="True" Removed="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="Instrument_col2" RelativeSize="59.090909090909093" Caption="Instrument_col2">
-                <LayoutItem Id="Project" Index="0" RelativeSize="50" ViewItem="Project" IsNewNode="True" />
-                <LayoutGroup Id="Autobeeed420-7133-4bb9-b713-f35981180530" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="Manufacturer" ViewItem="Manufacturer" Index="0" RelativeSize="49.230769230769234" IsNewNode="True" />
-                  <LayoutItem Id="ModelNumber" ViewItem="ModelNumber" Index="1" RelativeSize="50.769230769230766" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutItem Id="Manufacturer" RelativeSize="50" Removed="True" />
-                <LayoutItem Id="ModelNumber" RelativeSize="50" Removed="True" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" TextAlignMode="AlignWithChildren" RelativeSize="78.78151260504201" />
-        </LayoutGroup>
-      </Layout>
     </DetailView>
     <DetailView Id="SpecSheetTemplate_DetailView">
       <Items>

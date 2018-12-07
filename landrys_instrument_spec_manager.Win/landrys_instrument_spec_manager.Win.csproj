@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>landrys_instrument_spec_manager.Win</RootNamespace>
-    <AssemblyName>landrys_instrument_spec_manager.Win</AssemblyName>
+    <AssemblyName>Landrys Inst Spec Mgr</AssemblyName>
     <ApplicationIcon>InstSpecMgr.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -29,7 +29,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\RECONSERVERTX\TX Users\dlandry\Public\landrys-instrument-spec-manager\</InstallUrl>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
