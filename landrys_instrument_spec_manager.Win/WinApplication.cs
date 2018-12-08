@@ -63,18 +63,19 @@ namespace landrys_instrument_spec_manager.Win {
 #endif
         }
 
-        private void authenticationActiveDirectory1_CustomCreateUser(object sender, CustomCreateUserEventArgs e)
-        {
-            SecuritySystemUser user = e.ObjectSpace.CreateObject<SecuritySystemUser>();
-            user.UserName = e.UserName;
-            SecuritySystemRole defaultRole =
-                e.ObjectSpace.FindObject<SecuritySystemRole>(new BinaryOperator("Name", "Read-Only Guest"));
-            if (defaultRole != null)
-            {
-                user.Roles.Add(defaultRole);
-            }
-            e.User = user;
-            e.Handled = true;
-        }
+        //private void authenticationActiveDirectory1_CustomCreateUser(object sender, CustomCreateUserEventArgs e)
+        //{
+        //    SecuritySystemUser user = e.ObjectSpace.CreateObject<SecuritySystemUser>();
+        //    user.UserName = e.UserName;
+        //    SecuritySystemRole defaultRole =
+        //        e.ObjectSpace.FindObject<SecuritySystemRole>(new BinaryOperator("Name", "Default"));
+        //        //    e.ObjectSpace.FindObject<SecuritySystemRole>(new BinaryOperator("Name", "Read-Only Guest"));
+        //    if (defaultRole != null)
+        //    {
+        //        user.Roles.Add(defaultRole);
+        //    }
+        //    e.User = user;
+        //    e.Handled = true;
+        //}
     }
 }
