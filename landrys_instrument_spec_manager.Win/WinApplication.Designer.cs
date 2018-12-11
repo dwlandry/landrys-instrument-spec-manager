@@ -49,7 +49,7 @@
             // 
             this.authenticationActiveDirectory1.CreateUserAutomatically = true;
             this.authenticationActiveDirectory1.LogonParametersType = null;
-            this.authenticationActiveDirectory1.CustomCreateUser += new System.EventHandler<DevExpress.ExpressApp.Security.CustomCreateUserEventArgs>(this.authenticationActiveDirectory1_CustomCreateUser);
+            //this.authenticationActiveDirectory1.CustomCreateUser += new System.EventHandler<DevExpress.ExpressApp.Security.CustomCreateUserEventArgs>(this.authenticationActiveDirectory1_CustomCreateUser);
             // 
             // validationModule
             // 
