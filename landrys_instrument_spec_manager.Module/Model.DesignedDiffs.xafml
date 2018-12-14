@@ -2,20 +2,11 @@
 <Application Title="Landrys Inst Spec Mgr" Company="David Landry" Copyright="David Landry" Description="Landrys Instrument Spec Manager">
   <NavigationItems>
     <Items>
-      <Item Id="Default">
-        <Items>
-          <Item Id="Client_ListView" Removed="True" />
-          <Item Id="Instrument_ListView" Removed="True" />
-          <Item Id="InstrumentType_ListView" Removed="True" />
-          <Item Id="Project_ListView" Removed="True" />
-        </Items>
-      </Item>
       <Item Id="Spec Sheets" Caption="Spec Sheets" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="Instrument_ListView" ViewId="Instrument_ListView" ObjectKey="" Index="0" Caption="Instrument" ImageName="BO_List" IsNewNode="True" />
-          <Item Id="Project_ListView" ViewId="Project_ListView" ObjectKey="" Index="1" ImageName="BO_Project" IsNewNode="True" />
-          <Item Id="InstrumentType_ListView" ViewId="InstrumentType_ListView" ObjectKey="" Index="2" IsNewNode="True" />
-          <Item Id="Client_ListView" ViewId="Client_ListView" ObjectKey="" Index="3" ImageName="Customers" IsNewNode="True" />
+          <Item Id="Instrument_ListView" ObjectKey="" Index="0" Caption="Instruments" ImageName="BO_List" ViewId="Instrument_ListView" IsNewNode="True" />
+          <Item Id="Project_ListView" ObjectKey="" Index="1" ImageName="BO_Project" Caption="Projects" ViewId="Project_ListView" IsNewNode="True" />
+          <Item Id="SpecSheetTemplate_ListView" Caption="Templates" IsNewNode="True" />
         </Items>
       </Item>
     </Items>
@@ -35,27 +26,27 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="24.03846153846154">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="24.084778420038536">
             <LayoutGroup Id="Instrument" RelativeSize="100">
-              <LayoutGroup Id="Instrument_col1" RelativeSize="49.927641099855279" Caption="Instrument_col1">
-                <LayoutItem Id="Tag" ViewItem="Tag" CaptionLocation="Left" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" Removed="True" />
-                <LayoutItem Id="InstrumentType" ViewItem="InstrumentType" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" Removed="True" />
-                <LayoutItem Id="ServiceDescription" RelativeSize="36.363636363636367" Index="2" />
+              <LayoutGroup Id="Instrument_col1" RelativeSize="50">
+                <LayoutItem Id="Tag" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="ServiceDescription" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="InstrumentType" RelativeSize="36.363636363636367" />
               </LayoutGroup>
-              <LayoutGroup Id="Instrument_col2" RelativeSize="50.072358900144721">
+              <LayoutGroup Id="Instrument_col2" RelativeSize="50">
                 <LayoutItem Id="Manufacturer" RelativeSize="36.363636363636367" />
                 <LayoutItem Id="ModelNumber" RelativeSize="27.272727272727273" />
                 <LayoutItem Id="Project" RelativeSize="36.363636363636367" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" RelativeSize="75.961538461538467">
+          <LayoutGroup Id="SizeableEditors" RelativeSize="75.915221579961468">
             <LayoutItem Id="SpecSheet" ShowCaption="False" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Instrument_ListView" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Bottom" AllowEdit="False">
+    <ListView Id="Instrument_ListView" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Bottom" AllowEdit="False" DataAccessMode="Client">
       <Columns>
         <ColumnInfo Id="ServiceDescription" Index="-1" />
         <ColumnInfo Id="Project" Index="0" />
@@ -66,5 +57,30 @@
       </Columns>
     </ListView>
     <ListView Id="Project_Instruments_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
+    <DetailView Id="SpecSheetTemplate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="11.946050096339114">
+            <LayoutGroup Id="SpecSheetTemplate" RelativeSize="100" Direction="Horizontal">
+              <LayoutGroup Id="Auto8f93b6f0-01a2-4b16-adb5-c2c106838ac4" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Category" ViewItem="Category" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                <LayoutItem Id="Title" ViewItem="Title" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Auto506bae66-3568-4c3c-bfa7-3bd358717111" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="FormNumber" ViewItem="FormNumber" Index="0" RelativeSize="51.612903225806448" IsNewNode="True" />
+                <LayoutItem Id="Source" ViewItem="Source" Index="1" RelativeSize="48.387096774193552" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Source" Index="2" RelativeSize="34.883720930232556" Removed="True" />
+              <LayoutItem Id="Category" Removed="True" />
+              <LayoutItem Id="FormNumber" Removed="True" />
+              <LayoutItem Id="Title" RelativeSize="27.906976744186046" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="88.0539499036609">
+            <LayoutItem Id="SpecSheet" RelativeSize="100" ShowCaption="False" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
   </Views>
 </Application>

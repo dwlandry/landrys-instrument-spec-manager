@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="Client_ListView" Removed="True" />
+          <Item Id="Instrument_ListView" Removed="True" />
+          <Item Id="InstrumentType_ListView" Removed="True" />
+          <Item Id="Project_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

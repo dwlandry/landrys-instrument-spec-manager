@@ -1,5 +1,13 @@
-﻿namespace landrys_instrument_spec_manager.Win {
-    partial class landrys_instrument_spec_managerWindowsFormsApplication {
+﻿//-----------------------------------------------------------------------
+// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Win\WinApplication.Designer.cs" company="David W. Landry III">
+//     Author: _**David Landry**_
+//     *Copyright (c) David W. Landry III. All rights reserved.*
+// </copyright>
+//-----------------------------------------------------------------------
+namespace landrys_instrument_spec_manager.Win
+{
+    partial class Landrys_instrument_spec_managerWindowsFormsApplication
+    {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -9,8 +17,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if(disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,7 +32,8 @@
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
@@ -49,7 +60,7 @@
             // 
             this.authenticationActiveDirectory1.CreateUserAutomatically = true;
             this.authenticationActiveDirectory1.LogonParametersType = null;
-            this.authenticationActiveDirectory1.CustomCreateUser += new System.EventHandler<DevExpress.ExpressApp.Security.CustomCreateUserEventArgs>(this.authenticationActiveDirectory1_CustomCreateUser);
+            this.authenticationActiveDirectory1.CustomCreateUser += new System.EventHandler<DevExpress.ExpressApp.Security.CustomCreateUserEventArgs>(this.AuthenticationActiveDirectory1_CustomCreateUser);
             // 
             // validationModule
             // 
@@ -72,8 +83,8 @@
             this.Modules.Add(this.securityModule1);
             this.Security = this.securityStrategyComplex1;
             this.UseOldTemplates = false;
-            this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.landrys_instrument_spec_managerWindowsFormsApplication_DatabaseVersionMismatch);
-            this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.landrys_instrument_spec_managerWindowsFormsApplication_CustomizeLanguagesList);
+            this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.Landrys_instrument_spec_managerWindowsFormsApplication_DatabaseVersionMismatch);
+            this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.Landrys_instrument_spec_managerWindowsFormsApplication_CustomizeLanguagesList);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
