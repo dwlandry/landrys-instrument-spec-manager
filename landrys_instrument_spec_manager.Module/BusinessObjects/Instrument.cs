@@ -113,9 +113,11 @@ namespace landrys_instrument_spec_manager.Module.BusinessObjects
 
         public string Name => tag;
 
+        [VisibleInDetailView(false), VisibleInListView(false)]
         public ITreeNode Parent => Project;
 
-        public IBindingList Children => null;
+        [VisibleInDetailView(false), VisibleInListView(false)]
+        public IBindingList Children => new BindingList<object>();
     }
 
 }

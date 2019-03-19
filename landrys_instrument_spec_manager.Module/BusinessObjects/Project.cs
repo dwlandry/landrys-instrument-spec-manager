@@ -68,10 +68,13 @@ namespace landrys_instrument_spec_manager.Module.BusinessObjects
             set => SetPropertyValue(nameof(Client), ref client, value);
         }
 
+        [VisibleInDetailView(false), VisibleInListView(false)]
         public string Name => $"{ProjectNumber} - {ProjectDescription}";
 
+        [VisibleInDetailView(false), VisibleInListView(false)]
         public ITreeNode Parent => Client;
 
+        [VisibleInDetailView(false), VisibleInListView(false)]
         public IBindingList Children => Instruments;
     }
 }
