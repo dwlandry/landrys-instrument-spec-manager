@@ -1,10 +1,9 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="E:\OneDrive\My Programming Projects\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Win\Program.cs" company="David W. Landry III">
+// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Win\Program.cs" company="David W. Landry III">
 //     Author: _**David Landry**_
 //     *Copyright (c) David W. Landry III. All rights reserved.*
 // </copyright>
 //-----------------------------------------------------------------------
-
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Win.Utils;
@@ -35,7 +34,7 @@ namespace landrys_instrument_spec_manager.Win
                 Tracing.LocalUserAppDataPath = Application.LocalUserAppDataPath;
             }
             Tracing.Initialize();
-            landrys_instrument_spec_managerWindowsFormsApplication winApplication = new landrys_instrument_spec_managerWindowsFormsApplication();
+            Landrys_instrument_spec_managerWindowsFormsApplication winApplication = new Landrys_instrument_spec_managerWindowsFormsApplication();
             // Refer to the https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112680.aspx help article for more details on how to provide a custom splash form.
             //winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen("YourSplashImage.png");
             SecurityAdapterHelper.Enable();

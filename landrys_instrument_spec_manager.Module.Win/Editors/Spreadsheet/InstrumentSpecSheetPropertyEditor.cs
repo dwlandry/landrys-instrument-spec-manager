@@ -1,10 +1,9 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="E:\OneDrive\My Programming Projects\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module.Win\Editors\Spreadsheet\InstrumentSpecSheetPropertyEditor.cs" company="David W. Landry III">
+// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module.Win\Editors\Spreadsheet\InstrumentSpecSheetPropertyEditor.cs" company="David W. Landry III">
 //     Author: _**David Landry**_
 //     *Copyright (c) David W. Landry III. All rights reserved.*
 // </copyright>
 //-----------------------------------------------------------------------
-
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Win.Editors;
@@ -64,26 +63,26 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
                     {
                         ctrl.SheetControl.LoadDocument(filePath);
                     }
-                    else if (File.Exists(filePath.Replace("E:\\ReCon\\", "D:\\")))
+                    else if (File.Exists(filePath.Replace(@"E:\ReCon\", @"D:\")))
                     {
-                        ctrl.SheetControl.LoadDocument(filePath.Replace("E:\\ReCon\\", "D:\\"));
+                        ctrl.SheetControl.LoadDocument(filePath.Replace(@"E:\ReCon\", @"D:\"));
                     }
-                    else if (File.Exists(filePath.Replace("E:\\ReCon\\", "F:\\")))
+                    else if (File.Exists(filePath.Replace(@"E:\ReCon\", @"F:\")))
                     {
-                        ctrl.SheetControl.LoadDocument(filePath.Replace("E:\\ReCon\\", "F:\\"));
+                        ctrl.SheetControl.LoadDocument(filePath.Replace(@"E:\ReCon\", @"F:\"));
                     }
-                    else if (File.Exists(filePath.Replace("E:\\ReCon\\", "W:\\dlandry\\Public\\landrys-instrument-spec-manager\\")))
+                    else if (File.Exists(filePath.Replace(@"E:\ReCon\", @"\\RECONSERVER\TX Users\dlandry\Public\landrys-instrument-spec-manager\")))
                     {
-                        ctrl.SheetControl.LoadDocument(filePath.Replace("E:\\ReCon\\", "W:\\dlandry\\Public\\landrys-instrument-spec-manager\\"));
+                        ctrl.SheetControl.LoadDocument(filePath.Replace(@"E:\ReCon\", @"\\RECONSERVER\TX Users\dlandry\Public\landrys-instrument-spec-manager\"));
                     }
                     else
                     {
                         ctrl.SheetControl.CreateNewDocument();
                         ctrl.SheetControl.Document.Worksheets[0].Cells[0, 0].Value = "The spec sheet could not be located.  Looked in the following locations:";
                         ctrl.SheetControl.Document.Worksheets[0].Cells[1, 0].Value = filePath;
-                        ctrl.SheetControl.Document.Worksheets[0].Cells[2, 0].Value = filePath.Replace("E:\\ReCon\\", "D:\\");
-                        ctrl.SheetControl.Document.Worksheets[0].Cells[3, 0].Value = filePath.Replace("E:\\ReCon\\", "F:\\");
-                        ctrl.SheetControl.Document.Worksheets[0].Cells[4, 0].Value = filePath.Replace("E:\\ReCon\\", "W:\\dlandry\\Public\\landrys-instrument-spec-manager\\");
+                        ctrl.SheetControl.Document.Worksheets[0].Cells[2, 0].Value = filePath.Replace(@"E:\ReCon\", @"D:\");
+                        ctrl.SheetControl.Document.Worksheets[0].Cells[3, 0].Value = filePath.Replace(@"E:\ReCon\", @"F:\");
+                        ctrl.SheetControl.Document.Worksheets[0].Cells[4, 0].Value = filePath.Replace(@"E:\ReCon\", @"\\RECONSERVER\TX Users\dlandry\Public\landrys-instrument-spec-manager\");
                     }
                     //throw;
                 }

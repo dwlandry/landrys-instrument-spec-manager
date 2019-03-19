@@ -14,7 +14,7 @@ using System.Linq;
 namespace landrys_instrument_spec_manager.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [NavigationItem("Templates")]
+    [NavigationItem("Spec Sheets")]
     [DefaultListViewOptions(MasterDetailMode.ListViewAndDetailView, false, NewItemRowPosition.None)]
     public class SpecSheetTemplate : BaseObject
     { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
