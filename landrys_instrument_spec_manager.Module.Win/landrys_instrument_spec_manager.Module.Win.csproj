@@ -190,6 +190,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ExpandableLayoutGroupViewController.cs" />
+    <Compile Include="Controllers\ExpandableLayoutGroupViewController.Designer.cs">
+      <DependentUpon>ExpandableLayoutGroupViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Editors\Spreadsheet\InstrumentSpecSheetPropertyEditor.cs" />
     <Compile Include="Editors\Spreadsheet\SpreadsheetContainer.cs">
       <SubType>UserControl</SubType>
