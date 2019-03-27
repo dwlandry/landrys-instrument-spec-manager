@@ -14,7 +14,7 @@ using System.Linq;
 namespace landrys_instrument_spec_manager.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [NavigationItem("Spec Sheets")]
+    [NavigationItem("Spec Sheets"), CreatableItem(false)]
     //[ImageName("BO_Contact")]
     [DefaultProperty("ProjectNumber")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]

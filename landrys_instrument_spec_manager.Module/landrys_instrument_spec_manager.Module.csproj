@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Client.cs" />
+    <Compile Include="BusinessObjects\Features\My Projects\MyProject.cs" />
     <Compile Include="BusinessObjects\Instrument.cs" />
     <Compile Include="BusinessObjects\InstrumentType.cs" />
     <Compile Include="BusinessObjects\Project.cs" />

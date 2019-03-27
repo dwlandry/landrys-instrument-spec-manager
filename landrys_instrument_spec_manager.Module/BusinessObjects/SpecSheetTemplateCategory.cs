@@ -1,10 +1,9 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="E:\OneDrive\My Programming Projects\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module\BusinessObjects\SpecSheetTemplateCategory.cs" company="David W. Landry III">
+// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module\BusinessObjects\SpecSheetTemplateCategory.cs" company="David W. Landry III">
 //     Author: _**David Landry**_
 //     *Copyright (c) David W. Landry III. All rights reserved.*
 // </copyright>
 //-----------------------------------------------------------------------
-
 using DevExpress.ExpressApp;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
@@ -15,7 +14,7 @@ using System.Linq;
 namespace landrys_instrument_spec_manager.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [NavigationItem(false)]
+    [NavigationItem(false), CreatableItem(false)]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     [DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]

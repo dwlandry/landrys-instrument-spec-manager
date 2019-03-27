@@ -1,27 +1,29 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module\BusinessObjects\Instrument.cs" company="David W. Landry III">
+// <copyright file="F:\Users\dlandry\Source\Repos\dwlandry\landrys-instrument-spec-manager\landrys_instrument_spec_manager.Module\BusinessObjects\Features\My Projects\MyProject.cs" company="David W. Landry III">
 //     Author: _**David Landry**_
 //     *Copyright (c) David W. Landry III. All rights reserved.*
 // </copyright>
 //-----------------------------------------------------------------------
+using DevExpress.ExpressApp;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System;
 using System.Linq;
 
-namespace landrys_instrument_spec_manager.Module.BusinessObjects
+namespace landrys_instrument_spec_manager.Module.BusinessObjects.Features.My_Projects
 {
     [DefaultClassOptions]
-    [NavigationItem("Spec Sheets"), CreatableItem(false)]
-    //[ImageName("BO_Contact")]
+    [CreatableItem(false)]
+    [NavigationItem("Spec Sheets")]
+    [ImageName("BO_Project")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
-    public class Instrument : BaseObject
+    public class MyProject : BaseObject
     { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
-        public Instrument(Session session)
+        public MyProject(Session session)
             : base(session)
         {
         }
@@ -45,63 +47,9 @@ namespace landrys_instrument_spec_manager.Module.BusinessObjects
         //    this.PersistentProperty = "Paid";
         //}
 
-        string modelNumber;
-        string manufacturer;
-        InstrumentType instrumentType;
-        string serviceDescription;
+
         Project project;
-        string specSheet;
-        string tag;
 
-        [Size(40), ToolTip("Instrument Tag")]
-        public string Tag
-        {
-            get => tag;
-            set => SetPropertyValue(nameof(Tag), ref tag, value);
-        }
-
-
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string ServiceDescription
-        {
-            get => serviceDescription;
-            set => SetPropertyValue(nameof(ServiceDescription), ref serviceDescription, value);
-        }
-
-
-        public InstrumentType InstrumentType
-        {
-            get => instrumentType;
-            set => SetPropertyValue(nameof(InstrumentType), ref instrumentType, value);
-        }
-
-
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Manufacturer
-        {
-            get => manufacturer;
-            set => SetPropertyValue(nameof(Manufacturer), ref manufacturer, value);
-        }
-
-
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string ModelNumber
-        {
-            get => modelNumber;
-            set => SetPropertyValue(nameof(ModelNumber), ref modelNumber, value);
-        }
-
-        [Size(SizeAttribute.Unlimited)]
-        [VisibleInListView(false)]
-        [EditorAlias("Spec Sheet")]
-        public string SpecSheet
-        {
-            get => specSheet;
-            set => SetPropertyValue(nameof(SpecSheet), ref specSheet, value);
-        }
-
-
-        [Association("Project-Instruments")]
         public Project Project
         {
             get => project;
@@ -109,5 +57,4 @@ namespace landrys_instrument_spec_manager.Module.BusinessObjects
         }
 
     }
-
 }
