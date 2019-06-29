@@ -4,6 +4,7 @@
 //     *Copyright (c) David W. Landry III. All rights reserved.*
 // </copyright>
 //-----------------------------------------------------------------------
+using DevExpress.Spreadsheet;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraSpreadsheet;
 using System;
@@ -31,5 +32,26 @@ namespace landrys_instrument_spec_manager.Module.Win.Editors.Spreadsheet
         {
             barStaticItemReadOnlyStatus.Caption = SheetControl.ReadOnly ? "[READ ONLY MODE]" : "[EDIT MODE]";
         }
+
+        private void BarButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            var workbook = SheetControl;
+
+            workbook.Unit = DevExpress.Office.DocumentUnit.Inch;
+
+            Margins pageMargins = workbook.ActiveWorksheet.ActiveView.Margins;
+
+            pageMargins.Top = 0.25F;
+            pageMargins.Bottom = 0.25F;
+            pageMargins.Left = 0.25F;
+            pageMargins.Right = 0.25F;
+            pageMargins.Header = 0;
+            pageMargins.Footer = 0;
+
+            workbook.ActiveWorksheet.PrintOptions.CenterHorizontally = true;
+            workbook.ActiveWorksheet.PrintOptions.CenterVertically = true;
+        }
+
+        
     }
 }
